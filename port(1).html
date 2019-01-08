@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/
+	bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  	<style type="text/css">
+  		    img {
+			  width: 100%;
+			  height: 368px;
+			}
+			.port-item:hover {
+				cursor: pointer;
+				opacity: 0.8;
+			}
+			body {
+				background-color:#d3d3d3;
+			}
+  	</style>
+  	<script>
+  	  $(document).ready(function () {
+  		$('.port-item').click(function(){
+  		 $('#home').removeClass('show');
+  		 $('#resume').removeClass('show');
+  		 $('#work').removeClass('show');
+  		 $('#contact').removeClass('show');
+	     $('.collapse').collapse('hide');
+	    });
+	   });
+  	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row no-gutters">
+			<div class="col-md-4">
+				<img src="https://media.licdn.com/dms/image/C5103AQHsMy-GsbhQ_w/profile-displayphoto-shrink_200_200/0?e=1551312000&v=beta&t=q-7X1KJRqmEyu5_1gCcZLKtzjK6R050j2IJo_f0VLZY">
+			</div>
+			<div class="col-md-8">
+				<div class="p-5 bg-dark text-white" style="font-size: 40px;">Sahil Shikalgar</div>
+				<div class="p-3 text-white" style="font-size: 18px; background-color:black;">Intern at Posit Source Technologies</div>
+
+				<div class="row no-gutters">
+					<div class="col port-item bg-primary p-5 pd" data-toggle="collapse" data-target="#home">
+						<center><i class="fa fa-home fa-2x text-white" aria-hidden="true"></i>
+							<div class="text-white">Home</div></center>
+					</div>
+					<div class="col port-item bg-success p-5" data-toggle="collapse" data-target="#resume">
+						<center><i class="fa fa-graduation-cap fa-2x text-white" aria-hidden="true"></i>
+							<div class="text-white">Resume</div></center>
+					</div>
+					<div class="col port-item bg-warning p-5" data-toggle="collapse" data-target="#work">
+						<center><i class="fa fa-folder-open fa-2x text-white" aria-hidden="true"></i>
+							<div class="text-white">Work</div></center>
+					</div>
+					<div class="col port-item bg-danger p-5" data-toggle="collapse" data-target="#contact">
+						<center><i class="fa fa-home fa-2x text-white" aria-hidden="true"></i>
+							<div class="text-white">Contact</div></center>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row no-gutters">
+			<div class="col">
+				<div id="home" class="collapse show">
+			      <div class="card card-body bg-primary text-white py-5">
+			        <h2>Welcome To My Page</h2>
+			        <p class="">Here are some basic details about me.</p>
+			      </div>
+
+			      <div class="card card-body py-5">
+			        <h3>My Skills</h3>
+			        <p>Here are my skill sets.</p>
+			        <hr>
+			        <h4>HTML 5</h4>
+			        <div class="progress mb-3">
+			          <div class="progress-bar bg-success" style="width:60%"></div>
+			        </div>
+			        <h4>CSS 3</h4>
+			        <div class="progress mb-3">
+			          <div class="progress-bar bg-success" style="width:60%"></div>
+			        </div>
+			        <h4>JavaScript</h4>
+			        <div class="progress mb-3">
+			          <div class="progress-bar bg-success" style="width:80%"></div>
+			        </div>
+			        <h4>PHP</h4>
+			        <div class="progress mb-3">
+			          <div class="progress-bar bg-success" style="width:80%"></div>
+			        </div>
+			        <h4>Python</h4>
+			        <div class="progress mb-3">
+			          <div class="progress-bar bg-success" style="width:70%"></div>
+			        </div>
+			      </div>
+			    </div>
+
+			    <div id="resume" class="collapse">
+			       <div class="card card-body bg-success text-white py-5">
+				        <h2>My Resume</h2>
+				        <p class="">Here is about my resume.</p>
+      				</div>
+      			</div>
+
+      			 <div id="work" class="collapse">
+			       <div class="card card-body bg-warning text-white py-5">
+				        <h2>My Work</h2>
+				        <p class="">Here is about my resume.</p>
+      				</div>
+      			</div>
+
+      			 <div id="contact" class="collapse">
+			       <div class="card card-body bg-danger text-white py-5">
+				        <h2>My Contact</h2>
+				        <p class="">Here is about my Contact details.</p>
+      				</div>
+      			</div>
+			
+			</div>
+		</div>
+	</div>
+</body>
+</html>
